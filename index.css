@@ -42,12 +42,13 @@ button:hover {
 
 .shopping-item {
   display: block;
-  color: grey;
-  font-style: italic;
+  color: green;
+  font-style: oblique;
   font-size: 20px;
   margin-bottom: 15px;
 }
 
 .shopping-item__checked {
   text-decoration: line-through;
+  color: magenta;
 }
