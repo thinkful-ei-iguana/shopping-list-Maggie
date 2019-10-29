@@ -23,7 +23,7 @@ const generateItemElement = function (item) {
     itemButtonTitle = 
     `<label id='edit'><button class='shopping-item-edit js-item-edit-clicked'>submit</button></label>`
     itemTitle = 
-    `<form id='generated-items'
+    `<form id='generated-items'>
       <label><input type='text' id='item-name' class='shopping-item' value='${item.name}'></label>
     </form>`;
   } 
@@ -102,6 +102,7 @@ const handleNewItemSubmit = function () {
     event.preventDefault();
     const newItemName = $('.js-shopping-list-entry').val();
     $('.js-shopping-list-entry').val('');
+    
     addItemToShoppingList(newItemName);
     render();
   });
